@@ -70,10 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-Assignments/3DCube/Temp/FSTimeGet-313d0bdd91d1b764aa2b9f72597f2d17
-Assignments/3DCube/Temp/FSTimeGet-536175ce9aaba964cad39f1916e1e26e
-Assignments/3DCube/Temp/FSTimeGet-95334c9500ac6e1419e4599b34c116ef
-Assignments/3DCube/Temp/UnityLockfile
-Assignments/3DCube/Temp/workerlic
 Assignments/3DCube/Library/
 Assignments/3DCube/Temp/
+Assignments/User_Input/Library/
+Assignments/User_Input/Temp/
