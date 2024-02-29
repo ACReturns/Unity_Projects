@@ -12,11 +12,46 @@ public class BoxFunctions : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) 
-        {
-            myRigidBody2d.velocity = new Vector2(0f, 10f);
-        }
+	{
+		Movement();
+		OutOfBounds();
+	}
+
+	public void OutOfBoundsPrint()
+	{
+		Debug.Log("Hello from the other side");
+	}
+
+	public string TestMethod(int number)
+	{
+		string methodReturn = "The amount of tries this took was " + number;
+		return methodReturn;
+	}
+
+	private void OutOfBounds()
+	{
+		if (transform.position.x > 9.5f)
+		{
+			Debug.LogWarning("our cube is out of bounds to the Right side!");
+		}
+
+		if (transform.position.x < -9.5f)
+		{
+			Debug.LogWarning("our cube is out of bounds to the Left side!");
+		}
+
+		if (transform.position.y > 5.5f)
+		{
+			Debug.LogWarning("our cube is out of bounds to the Upper side!");
+		}
+	}
+
+	private void Movement()
+	{
+		if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+		{
+			myRigidBody2d.velocity = new Vector2(0f, 10f);
+		}
 
 		if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
 		{
@@ -31,21 +66,6 @@ public class BoxFunctions : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
 		{
 			myRigidBody2d.velocity = new Vector2(10f, 0f);
-		}
-
-		if (transform.position.x > 9.5f)
-		{
-			Debug.LogWarning("our cube is out of bounds to the Right side!");
-		}
-
-		if (transform.position.x < -9.5f)
-		{
-			Debug.LogWarning("our cube is out of bounds to the Left side!");
-		}
-
-		if (transform.position.y > 5.5f)
-		{
-			Debug.LogWarning("our cube is out of bounds to the Upper side!");
 		}
 	}
 }
