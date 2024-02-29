@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ErrorMessage : MonoBehaviour
 {
+	public Rigidbody myRigidBody;
+
     // Start is called before the first frame update
     void Start()
     {
