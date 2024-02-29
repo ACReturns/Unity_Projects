@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BoxFunctions : MonoBehaviour
@@ -33,6 +31,21 @@ public class BoxFunctions : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
 		{
 			myRigidBody2d.velocity = new Vector2(10f, 0f);
+		}
+
+		if (transform.position.x > 9.5f)
+		{
+			Debug.LogWarning("our cube is out of bounds to the Right side!");
+		}
+
+		if (transform.position.x < -9.5f)
+		{
+			Debug.LogWarning("our cube is out of bounds to the Left side!");
+		}
+
+		if (transform.position.y > 5.5f)
+		{
+			Debug.LogWarning("our cube is out of bounds to the Upper side!");
 		}
 	}
 }
