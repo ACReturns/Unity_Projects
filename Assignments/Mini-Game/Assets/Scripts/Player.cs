@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         rigidbodyPlayer = GetComponent<Rigidbody>();
-
 	}
 
     // Update is called once per frame
@@ -21,10 +20,5 @@ public class Player : MonoBehaviour
 
 		Vector3 movement = new Vector3(moveHoriz, 0.0f, moveVert);
 		rigidbodyPlayer.AddForce(movement * baseSpeed);
-	}
-
-	public void IncreaseSpeed(float value)
-	{
-		baseSpeed += value;
 	}
 }
