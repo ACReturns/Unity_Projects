@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5929692, g: 0.8033719, b: 0.9551979, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -240,7 +240,6 @@ GameObject:
   - component: {fileID: 33353036}
   - component: {fileID: 33353035}
   - component: {fileID: 33353034}
-  - component: {fileID: 33353033}
   m_Layer: 0
   m_Name: Floor (3)
   m_TagString: Untagged
@@ -263,18 +262,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2045679345}
   m_LocalEulerAnglesHint: {x: 13.15, y: 0, z: 0}
---- !u!114 &33353033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33353031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65eff3270db374643855af4761dbeff9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &33353034
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2329,7 +2316,6 @@ GameObject:
   - component: {fileID: 1250607057}
   - component: {fileID: 1250607056}
   - component: {fileID: 1250607055}
-  - component: {fileID: 1250607058}
   m_Layer: 0
   m_Name: Floor (1)
   m_TagString: Untagged
@@ -2424,18 +2410,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250607053}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1250607058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1250607053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65eff3270db374643855af4761dbeff9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1824101522
 GameObject:
   m_ObjectHideFlags: 3
